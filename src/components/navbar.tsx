@@ -1,4 +1,3 @@
-'use client'
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -17,7 +16,7 @@ export default function Navbar() {
         <div className="relative flex items-center justify-between h-16">
           {/* Left side (Logo) */}
           <div className="flex-shrink-0">
-            <h1 className="text-white text-4xl font-[300] ">/Rohit</h1>
+            <h1 className="dark:text-white text-4xl font-[300] ">Cascade UI</h1>
           </div>
 
           {/* Centered Menu Links (hidden on small screens) */}
@@ -25,19 +24,19 @@ export default function Navbar() {
             <div className="flex space-x-4 border-[0.1px] rounded-full px-5">
               <a
                 href="#"
-                className="text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
+                className="dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
+                className="dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
               >
                 About Me
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
+                className="dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
               >
                 Projects
               </a>
@@ -47,7 +46,7 @@ export default function Navbar() {
 
           {/* Right side button (Login) */}
           <div className="hidden sm:flex">
-            <button className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]">
+            <button className="dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]">
               Contact Me
             </button>
           </div>
