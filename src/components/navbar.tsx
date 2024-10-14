@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import svg from '../assets/cascadeUiIconblack.svg'
-import svg2 from '../assets/cascadeUIIconWhite.svg'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
