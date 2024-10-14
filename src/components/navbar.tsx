@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-
+import svg from '../assets/cascadeUiIconblack.svg'
+import svg2 from '../assets/cascadeUIIconWhite.svg'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,10 +16,11 @@ export default function Navbar() {
       <div className="w-full">
         <div className="relative flex items-center justify-between h-16">
           {/* Left side (Logo) */}
-          <div className="flex-shrink-0">
-            <h1 className="dark:text-white text-4xl font-[300] ">Cascade UI</h1>
-          </div>
+          <div className="flex-shrink-0 flex items-center">
+  <img src={svg} alt='Cascade UI logo' className="h-8 w-8 mr-2 " />
 
+  <h1 className="dark:text-white text-2xl font-light">Cascade UI</h1>
+</div>
           {/* Centered Menu Links (hidden on small screens) */}
           <div className="hidden sm:flex sm:flex-1 justify-center  ">
             <div className="flex space-x-4 border-[0.1px] rounded-full px-5">
