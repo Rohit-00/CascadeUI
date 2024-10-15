@@ -21,7 +21,10 @@ const Tabs = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mt-10">
+    <div className="mt-10">
+    <div className="sm:text-6xl text-3xl font-bold">Steps To Integrate</div>
+    <div className="flex flex-col items-center justify-center">
+      
       {/* Tabs with highlight animation */}
       <div className="relative border-b border-gray-300 mb-4">
         <ul className="flex space-x-4 relative">
@@ -68,6 +71,7 @@ const Tabs = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
