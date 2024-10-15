@@ -16,8 +16,8 @@ const Screen = ({item}:any) =>{
 
 function Components() {
   return (
-    <div className="mt-9">
-      <div className="flex flex-row justify-between items-baseline"><div className="text-3xl sm:text-6xl font-semibold">Components</div><div>all components</div></div>
+    <div className="mt-16">
+      <div className="flex flex-row justify-between items-baseline"><div className="text-3xl sm:text-5xl font-semibold">Components</div><div>all components</div></div>
       <div className="grid sm:grid-cols-5 justify-center items-center self-center">
       {comps.map((item)=>
         <div>
@@ -25,6 +25,7 @@ function Components() {
         </div>
     )} 
           </div>
+          <div className=" flex flex-row items-center justify-center mt-11"><div className="border p-3 rounded-xl">Browse all</div></div>
     </div>
   )
 }

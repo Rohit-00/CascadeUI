@@ -15,11 +15,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.scroll-container {
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+::-webkit-scrollbar {
+  width: 7px;
 }
 
+/* Customize the track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background:transparent ;
+
+}
+
+/* Customize the handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb{
+  background: whitesmoke;
+  border-radius: 10px;
+
+}
+
+/* Customize the handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* styles/globals.css */
+.scrollbar-track {
+  background: #f0f0f0; /* Track color */
+}
+
+.scrollbar-thumb {
+  background: green; /* Thumb color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.scrollbar-thumb:hover {
+  background: red; /* Thumb color on hover */
+}
 
 
 
