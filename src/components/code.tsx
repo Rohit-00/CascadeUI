@@ -1,22 +1,3 @@
-const sampleCode = `
-import { AnimatedSubscribeButton } 
-from '../components/animatedButton'
-
-const App = () => {
-  return (
-    <View>
-      <AnimatedSubscribeButton
-  buttonColor="#000000"
-  buttonTextColor="#ffffff"
-  subscribeStatus={false}
-  initialText="Subscribe"
-  changeText="Subscribed"
-      />
-    </View>
-  )}
-
-export default App
-`
 const sampleCode2 = `
 import { StyleSheet, View } from 'react-native'
 import React from 'react'
@@ -33,23 +14,6 @@ const App = () => {
       cvv={699}
       />
     </View>)};
-
-export default App
-`
-const sampleCode3 = `
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import AnimatedList from '../components/animatedList'
-
-const App = () => {
-  return (
-    <AnimatedList
-    ItemStyle={Item} // React component that defines style for each of the list item
-    data={data}
-    animation={'slide-left-spring'}
-    />
-  )
-}
 
 export default App
 `
