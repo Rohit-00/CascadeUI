@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
           <div className="mt-8 xl:mt-0">
             <h3 className="text-sm font-semibold uppercase tracking-wider">Send your feedback or just say hi</h3>
          
-           <div className='text-blue-600'>@ir0nic</div>
+          <a href='https://x.com/byir0nic' target='_blank'> <div className='text-blue-600'>@ir0nic</div> </a>
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">

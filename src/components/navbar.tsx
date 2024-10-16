@@ -30,19 +30,19 @@ export default function Navbar() {
             <div className="flex space-x-4 border-[0.1px] rounded-full px-5">
               <NavLink
                 to="/"
-                className=  {({isActive})=>isActive?"dark:text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
+                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
                 Home
               </NavLink>
               <NavLink
                 to="/components"
-                className=  {({isActive})=>isActive?"dark:text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
+                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
                 Components
               </NavLink>
               <NavLink
                 to="/aboutus"
-                className=  {({isActive})=>isActive?"dark:text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
+                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
                 About Us
               </NavLink>
