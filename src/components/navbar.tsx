@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import svg from '../assets/cascadeUiIconblack.svg'
+import { Link, NavLink } from 'react-router-dom';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,36 +12,40 @@ export default function Navbar() {
 
   return (
     <div>
-    <nav className=" ">
+    <nav className="mt-5 mx-10">
       <div className="w-full">
         <div className="relative flex items-center justify-between h-16">
           {/* Left side (Logo) */}
+          <Link to={'/'}>
           <div className="flex-shrink-0 flex items-center">
-  <img src={svg} alt='Cascade UI logo' className="h-8 w-8 mr-2 " />
+          
+            <img src={svg} alt='Cascade UI logo' className="h-8 w-8 mr-2 " />
 
-  <h1 className="dark:text-white text-2xl font-light">Cascade UI</h1>
-</div>
+            <h1 className="dark:text-white text-2xl font-light">Cascade UI</h1>
+          
+          </div>
+          </Link>
           {/* Centered Menu Links (hidden on small screens) */}
           <div className="hidden sm:flex sm:flex-1 justify-center  ">
             <div className="flex space-x-4 border-[0.1px] rounded-full px-5">
-              <a
-                href="#"
-                className="dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
+              <NavLink
+                to="/"
+                className=  {({isActive})=>isActive?"dark:text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
                 Home
-              </a>
-              <a
-                href="#"
-                className="dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
+              </NavLink>
+              <NavLink
+                to="/components"
+                className=  {({isActive})=>isActive?"dark:text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
-                About Me
-              </a>
-              <a
-                href="#"
-                className="dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
+                Components
+              </NavLink>
+              <NavLink
+                to="/aboutus"
+                className=  {({isActive})=>isActive?"dark:text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
-                Projects
-              </a>
+                About Us
+              </NavLink>
             
             </div>
           </div>

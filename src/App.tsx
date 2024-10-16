@@ -1,31 +1,40 @@
-import Code from './components/code';
-import Components from './components/components';
-import Footer from './components/footer';
-import Hero from './components/Hero';
-import Navbar from './components/navbar';
-import Steps from './components/steps';
-
-//smooth scroll
 import useLenisScroll from './hooks/lenis';
-
-
 import './index.css';
+import HomePage from './pages/home';
+import Layout from './layout';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import AboutUs from './pages/aboutus';
+import ComponentsPage from './pages/components';
+
+const router = createBrowserRouter([
+  {
+    path : '/',
+    element : <Layout/>,
+    children: [
+      {
+        path : "/",
+        element : <HomePage/>
+      },
+      {
+        path : "/components",
+        element : <ComponentsPage/>
+      },
+      {
+        path : "/aboutus",
+        element : <AboutUs/>
+      }
+    ]
+
+  }
+])
 
 const App = () => {
 useLenisScroll()
   return (
-    <>
-    <div className="scrollbar-container sm:mx-10 mx-4 scrollbar-container">
-  <Navbar/>
-    <Hero/>
-
-<Steps/>
-<Code/>
-<Components/>
-
+    <div >
+ 
+    <RouterProvider router={router}/>
     </div>
-    <Footer/>
-    </>
   );
 };
 

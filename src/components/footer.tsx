@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import logo from '../assets/cascadeUiIconblack.svg'
+import { Link } from 'react-router-dom';
 interface FooterLink {
   name: string;
   href: string;
@@ -15,9 +16,9 @@ interface SocialLink {
 const navigation: { [key: string]: FooterLink[] } = {
   main: [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'About', href: '/aboutus' },
+    { name: 'components', href: '/components' },
+    { name: 'Contact', href: '/cont' },
   ],
   legal: [
     { name: 'Privacy Policy', href: '/privacy' },
@@ -46,9 +47,9 @@ const Footer: React.FC = () => {
                 <ul className="mt-4 space-y-4">
                   {navigation.main.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base">
+                      <Link to={item.href} className="text-base">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

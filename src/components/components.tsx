@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
     const comps = [
 
     {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/670bfa57002fc8873ab8/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:''},
@@ -25,7 +27,9 @@ function Components() {
         </div>
     )} 
           </div>
+          <Link to={'/components'}>
           <div className=" flex flex-row items-center justify-center mt-11"><div className="border p-3 rounded-xl">Browse all</div></div>
+          </Link>
     </div>
   )
 }
