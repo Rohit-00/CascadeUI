@@ -1,16 +1,9 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import logo from '../assets/cascadeUiIconblack.svg'
 import { Link } from 'react-router-dom';
 interface FooterLink {
   name: string;
   href: string;
-}
-
-interface SocialLink {
-  name: string;
-  href: string;
-  icon: React.ElementType;
 }
 
 const navigation: { [key: string]: FooterLink[] } = {
