@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <div>
-    <nav className="mt-5 mx-10">
+    <nav className="mt-5 mx-6 sm:mx-10">
       <div className="w-full">
         <div className="relative flex items-center justify-between h-16">
           {/* Left side (Logo) */}
@@ -110,24 +110,24 @@ export default function Navbar() {
         className="sm:hidden overflow-hidden"
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="text-gray-300 hover:text-primary  block px-3 py-2 rounded-md text-base font-medium"
           >
-            About Me
-          </a>
-          <a
-            href="#"
+            Home
+          </Link>
+          <Link
+            to="/components"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Projects
-          </a>
-          <a
-            href="#"
+            Components
+          </Link>
+          <Link
+            to="/aboutus"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Contact Me
-          </a>
+            About Us
+          </Link>
        
         </div>
       </motion.div>

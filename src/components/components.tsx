@@ -12,14 +12,14 @@ import { Link } from "react-router-dom"
 
 const Screen = ({item}:any) =>{
     return(
-      <video poster="" height={400} width={200} src={item.src} loop autoPlay muted  className="rounded-xl transition-transform ease-in-out hover:scale-110 cursor-pointer" />
+      <video poster="" height={400} width={200} src={item.src} loop autoPlay muted  className="rounded-xl transition-transform ease-in-out hover:scale-110 cursor-pointer m-6" />
     )
 }
 
 function Components() {
   return (
-    <div className="mt-16">
-      <div className="flex flex-row justify-between items-baseline"><div className="text-3xl sm:text-5xl font-semibold">Components</div></div>
+    <div className="mt-16 justify-center items-center">
+      <div className="flex flex-row justify-between"><div className="text-3xl sm:text-5xl font-semibold">Components</div></div>
       <div className="grid sm:grid-cols-5 items-center mt-7 justify-center">
 
       {comps.map((item)=>

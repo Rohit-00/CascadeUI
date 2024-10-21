@@ -16,9 +16,8 @@ interface SocialLink {
 const navigation: { [key: string]: FooterLink[] } = {
   main: [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/aboutus' },
+    { name: 'About Us', href: '/aboutus' },
     { name: 'components', href: '/components' },
-    { name: 'Contact', href: '/cont' },
   ],
   legal: [
     { name: 'Privacy Policy', href: '/privacy' },
@@ -41,8 +40,8 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <div className='flex flex-row gap-2'>
-                <img src={logo} height={30} width={30}></img><h3 className="text-xl font-semibold uppercase tracking-wider">Cascade UI</h3>
+                <div className='flex flex-row gap-2 items-center'>
+                <img src={logo} height={30} width={30}></img><h3 className="text-base sm:text-xl font-semibold uppercase tracking-wider">Cascade UI</h3>
                 </div>
                 <ul className="mt-4 space-y-4">
                   {navigation.main.map((item) => (
@@ -65,12 +64,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
-            {social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300">
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
+         
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
             &copy; {new Date().getFullYear()} Cascade UI. No rights reserved.
