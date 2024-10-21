@@ -25,12 +25,6 @@ const navigation: { [key: string]: FooterLink[] } = {
   ],
 };
 
-const social: SocialLink[] = [
-  { name: 'Facebook', href: '#', icon: FaFacebook },
-  { name: 'Twitter', href: '#', icon: FaTwitter },
-  { name: 'Instagram', href: '#', icon: FaInstagram },
-  { name: 'LinkedIn', href: '#', icon: FaLinkedin },
-];
 
 const Footer: React.FC = () => {
   return (
