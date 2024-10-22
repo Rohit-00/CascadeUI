@@ -52,9 +52,11 @@ export default function Navbar() {
 
           {/* Right side button (Login) */}
           <div className="hidden sm:flex">
+            <a href='https://x.com/byir0nic' target='_blank'>
             <button className="dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]">
               Contact Me
             </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}

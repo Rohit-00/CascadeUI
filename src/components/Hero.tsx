@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Phone from "./phones"
 
 const Hero = () => {
@@ -9,12 +10,16 @@ const Hero = () => {
         Collection of stunning animated components. Just copy and paste
       </div>
       <div className="flex flex-row  gap-4 items-center mt-6">
+      <Link to={'/components'}>
       <div className="p-3 border-2 rounded-lg">
         Components
       </div>
+      </Link>
+      <a href="https://uidocs.pages.dev/components/animatedbutton/" target="_blank">
       <div>
         Documentation
       </div>
+      </a>
       </div>
       </div>
       <div className="w-full mt-9">

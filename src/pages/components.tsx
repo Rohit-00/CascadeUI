@@ -22,7 +22,7 @@ const Screen = ({item}:any) =>{
 function ComponentsPage() {
   return (
     <div className="mt-16">
-      <div className="flex flex-row justify-between items-baseline"><div className="text-3xl sm:text-5xl font-semibold">Components</div><div>Documentation</div></div>
+      <div className="flex flex-row justify-between items-baseline"><div className="text-3xl sm:text-5xl font-semibold">Components</div><a href="https://uidocs.pages.dev/components/animatedbutton/" target="_blank"><div>Documentation</div></a></div>
       <div className="grid sm:grid-cols-4 justify-center items-center self-center">
       {comps.map((item)=>
         <div>
