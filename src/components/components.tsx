@@ -17,7 +17,7 @@ const Screen = ({item}:any) =>{
 function Components() {
   return (
     <div className="mt-16 justify-center items-center" id="components">
-    <div className="text-3xl sm:text-5xl font-bold text-center">Components</div>
+    <div className="text-3xl sm:text-5xl font-bold text-center mb-4">Components</div>
       <div className="grid sm:grid-cols-5 items-center mt-7 justify-center">
 
       {comps.map((item)=>
