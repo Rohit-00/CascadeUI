@@ -53,6 +53,7 @@ export default function Navbar() {
 
           {/* Right side button (Login) */}
           <div className="hidden sm:flex items-center">
+          <a href='https://github.com/Rohit-00/cascade' target='_blank'>
           <button className="p-[3px] relative">
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
           <div className="px-4 py-2 bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
@@ -60,6 +61,7 @@ export default function Navbar() {
           </div>
         
           </button>
+          </a>
             <a href='https://x.com/byir0nic' target='_blank'>
         
             </a>
