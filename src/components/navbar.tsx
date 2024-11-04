@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <div>
-    <nav className="mt-5 mx-6 sm:mx-10">
+    <nav className=" mx-6 sm:mx-10">
       <div className="w-full">
         <div className="relative flex items-center justify-between h-16">
           {/* Left side (Logo) */}
@@ -27,19 +27,20 @@ export default function Navbar() {
           </Link>
           {/* Centered Menu Links (hidden on small screens) */}
           <div className="hidden sm:flex sm:flex-1 justify-center  ">
-            <div className="flex space-x-4 border-[0.1px] rounded-full px-5">
+            <div className="flex  px-5">
               <NavLink
                 to="/"
                 className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
                 Home
               </NavLink>
-              <NavLink
-                to="/components"
-                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
+              <a
+                href="https://uidocs.pages.dev/components/animatedbutton/"
+                className="dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"
+                
               >
                 Components
-              </NavLink>
+              </a>
               <NavLink
                 to="/aboutus"
                 className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
@@ -51,11 +52,16 @@ export default function Navbar() {
           </div>
 
           {/* Right side button (Login) */}
-          <div className="hidden sm:flex">
+          <div className="hidden sm:flex items-center">
+          <button className="p-[3px] relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+          <div className="px-4 py-2 bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+            Star on Github
+          </div>
+        
+          </button>
             <a href='https://x.com/byir0nic' target='_blank'>
-            <button className="dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]">
-              Contact Me
-            </button>
+        
             </a>
           </div>
 

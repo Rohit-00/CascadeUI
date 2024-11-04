@@ -1,25 +1,23 @@
-import { Link } from "react-router-dom"
-
     const comps = [
 
-    {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/670bfa57002fc8873ab8/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:''},
-    {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/670bfa57002fc8873ab8/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:''},
-    {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/670bfa57002fc8873ab8/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:''},
-    {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/670bfa57002fc8873ab8/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:''},
-    {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/670bfa57002fc8873ab8/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:''},
+      {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/671c400e0023a10aac89/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:'Animated Sign In form',poster:'',link:''},
+      {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/671c3ff8002d2bfce862/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:'Circular Progress Number',poster:''},
+      {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/671c3fee000c04f75efe/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:'Hold to open menu',poster:''},
+      {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/671c3fe8003700d7248e/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:'Animated Tabs',poster:''},
+      {src:'https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/671c3fdf00140966e248/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin',title:'Password toggle',poster:''},
 
 ]
 
 const Screen = ({item}:any) =>{
     return(
-      <video poster="" height={400} width={200} src={item.src} loop autoPlay muted  className="rounded-xl transition-transform ease-in-out hover:scale-110 cursor-pointer m-6" />
+   <a href={item.link}> <video poster="" height={400} width={200} src={item.src} loop autoPlay muted  className="rounded-xl transition-transform ease-in-out hover:scale-110 cursor-pointer m-6" /> </a> 
     )
 }
 
 function Components() {
   return (
-    <div className="mt-16 justify-center items-center">
-      <div className="flex flex-row justify-between"><div className="text-3xl sm:text-5xl font-semibold">Components</div></div>
+    <div className="mt-16 justify-center items-center" id="components">
+    <div className="text-3xl sm:text-5xl font-bold text-center">Components</div>
       <div className="grid sm:grid-cols-5 items-center mt-7 justify-center">
 
       {comps.map((item)=>
@@ -28,9 +26,9 @@ function Components() {
         </div>
     )} 
           </div>
-          <Link to={'/components'}>
-          <div className=" flex flex-row items-center justify-center mt-11"><div className="border p-3 rounded-xl">Browse all</div></div>
-          </Link>
+          <a href='https://uidocs.pages.dev/components/animatedbutton/' target="_blank">
+          <div className=" flex flex-row items-center justify-center mt-11"><div className="border border-gray-800 dark:border-gray-300 p-3 rounded-xl">Browse all</div></div>
+          </a>
     </div>
   )
 }

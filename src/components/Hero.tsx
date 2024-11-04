@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="w-full"><div className=" sm:text-7xl text-3xl font-bold"><a>Beautiful Apps <br/> With Minimal Effort</a>
       </div>
       <div className="text-gray-400">
-        Collection of stunning animated components. Just copy and paste
+        Collection of stunning animated components that are easy to integrate
       </div>
       <div className="flex flex-row  gap-4 items-center mt-6">
       <Link to={'/components'}>

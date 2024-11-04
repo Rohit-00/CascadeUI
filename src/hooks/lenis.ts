@@ -4,7 +4,7 @@ import Lenis from '@studio-freight/lenis';
 const useLenisScroll = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      lerp: 0.1, // The lower the number, the smoother the scrolling
+      lerp: 0.3, // The lower the number, the smoother the scrolling
       smoothWheel:true
     });
 

@@ -10,7 +10,6 @@ const navigation: { [key: string]: FooterLink[] } = {
   main: [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/aboutus' },
-    { name: 'components', href: '/components' },
   ],
   legal: [
     { name: 'Privacy Policy', href: '/privacy' },
@@ -35,9 +34,12 @@ const Footer: React.FC = () => {
                     <li key={item.name}>
                       <Link to={item.href} className="text-base">
                         {item.name}
-                      </Link>
+                      </Link>                     
                     </li>
                   ))}
+                  <li>
+                  <a href='https://uidocs.pages.dev/components/animatedbutton/' className="text-base">Components</a>
+                  </li>
                 </ul>
               </div>
                   
