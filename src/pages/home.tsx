@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Steps from '../components/steps';
 import Code from '../components/code';
 import Components from '../components/components';
+import Use from '../components/use';
 
 
 const HomePage = () => {
@@ -10,10 +11,10 @@ const HomePage = () => {
     <>
    <div>
     <Hero/>
-
-<Steps/>
-<Code/>
-<Components/>
+    <Use/>
+    <Steps/>
+    <Code/>
+    <Components/>
 
     </div>
     </>

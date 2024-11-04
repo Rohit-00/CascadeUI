@@ -23,7 +23,7 @@ function MyComponent() {
   };
 
   return (
-    <section className="py-16 mt-16">
+    <section className="py-16 mt-11">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl sm:text-5xl font-bold text-center">Quick Start Guide</h2>
         <div className="text-center font-base mb-11">Easy to implement components</div>
