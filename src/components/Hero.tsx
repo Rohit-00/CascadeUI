@@ -10,11 +10,11 @@ const Hero = () => {
         Collection of stunning animated components that are easy to integrate
       </div>
       <div className="flex flex-row  gap-4 items-center mt-6">
-      <Link to={'/components'}>
+      <a href={'https://uidocs.pages.dev/components/animatedbutton/'}>
       <div className="p-3 border-2 rounded-lg">
         Components
       </div>
-      </Link>
+      </a>
       <a href="https://uidocs.pages.dev/components/animatedbutton/" target="_blank">
       <div>
         Documentation
