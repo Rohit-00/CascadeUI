@@ -2,7 +2,7 @@ import Phone from "./phones"
 
 const Hero = () => {
   return (
-    <div className="flex  flex-col sm:flex-row mt-10 items-center justify-between">
+    <div className="flex  flex-col sm:flex-row mt-20 sm:mt-10 items-center justify-between">
       <div className="w-full"><div className=" sm:text-7xl text-3xl font-bold"><a>Beautiful Apps <br/> With Minimal Effort</a>
       </div>
       <div className="text-gray-400">
@@ -10,7 +10,7 @@ const Hero = () => {
       </div>
       <div className="flex flex-row  gap-4 items-center mt-6">
       <a href={'https://uidocs.pages.dev/components/animatedbutton/'}>
-      <div className="p-3 border-2 rounded-lg">
+      <div className="p-3 dark:border border-2 rounded-lg z-50">
         Components
       </div>
       </a>

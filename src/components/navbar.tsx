@@ -11,39 +11,39 @@ export default function Navbar() {
   };
 
   return (
-    <div>
+    <div className='fixed top-0 backdrop-blur-sm bg-white/80 dark:bg-black/80 w-full z-50'>
     <nav className=" mx-6 sm:mx-10">
       <div className="w-full">
-        <div className="relative flex items-center justify-between h-16">
+        <div className="relative flex items-center justify-between h-14">
           {/* Left side (Logo) */}
           <Link to={'/'}>
           <div className="flex-shrink-0 flex items-center">
           
             <img src={svg} alt='Cascade UI logo' className="h-8 w-8 mr-2 " />
 
-            <h1 className="dark:text-white text-2xl font-light">Cascade UI</h1>
+            <h1 className="dark:text-white text-2xl font-semibold">Cascade UI</h1>
           
           </div>
           </Link>
           {/* Centered Menu Links (hidden on small screens) */}
-          <div className="hidden sm:flex sm:flex-1 justify-center  ">
+          <div className="hidden sm:flex sm:flex-1 justify-center">
             <div className="flex  px-5">
               <NavLink
                 to="/"
-                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
+                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-400  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
                 Home
               </NavLink>
               <a
                 href="https://uidocs.pages.dev/components/animatedbutton/"
-                className="dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"
+                className="dark:text-gray-400  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"
                 
               >
                 Components
               </a>
               <NavLink
                 to="/aboutus"
-                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
+                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-400  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
                 About Us
               </NavLink>
@@ -56,7 +56,7 @@ export default function Navbar() {
           <a href='https://github.com/Rohit-00/cascade' target='_blank'>
           <button className="p-[3px] relative">
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-          <div className="px-4 py-2 bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+          <div className="px-2 py-1 text-sm bg-white dark:bg-black rounded-[6px]  relative group transition duration-200 text-black dark:hover:text-black hover:text-white dark:text-white hover:bg-transparent">
             Star on Github
           </div>
         

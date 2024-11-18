@@ -4,30 +4,34 @@ function Steps() {
   const [activeTab, setActiveTab] = useState<'installation' | 'usage'>('installation');
 
   const quickStartTabs: Record<'installation' | 'usage', string> = {
-    installation: `npm install @cascadeui/animated-tabs
+    installation: `npm install @cascadeui/animatedbutton
 
 # or with yarn
-yarn add @cascadeui/animated-tabs
+yarn add @cascadeui/animatedbutton
 
 #or just copy paste the code from the docs like a champ
 `,
-    usage: `import { AnimatedTabs } from '@cascadeui/animated-tabs';
+    usage: `import { Animatedbutton } from '@cascadeui/animatedbutton';
 
 function MyComponent() {
   return (
-    <Button onPress={() => console.log('Pressed!')}>
-      Press me
-    </Button>
+          <AnimatedSubscribeButton
+  buttonColor="#000000"
+  buttonTextColor="#ffffff"
+  subscribeStatus={false}
+  initialText="Subscribe"
+  changeText="Subscribed"
+          />
   );
 }`,
   };
 
   return (
     <div className="sm:flex sm:items-center sm:justify-center">
-      <section className="py-16 rounded-lg shadow-lg">
+      <section className="py-16 rounded-lg ">
         <div className="container">
           <h2 className="text-3xl sm:text-5xl font-bold text-center">Quick Start Guide</h2>
-          <div className="font-base mb-11 text-center">Easy to implement components</div>
+          <div className="font-base mb-11 text-center mt-4">Easy to implement components</div>
           <div className="max-w-3xl mx-auto">
             <div className="flex sm:justify-center">
               <button
