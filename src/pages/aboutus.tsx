@@ -1,6 +1,6 @@
 function AboutUs() {
   return (
-    <div className="mt-10">
+    <div className="mt-32">
       <div className="sm:text-6xl text-3xl font-bold text-center">About Us</div>
       <div className="mx-6 sm:mx-96 mt-4 sm:mt-10 text-justify">
         I lied there's no 'us' it's only <a href="https://x.com/byir0nic" target="_blank" className="text-blue-500">me</a>. I'm newbie a Web developer. I don't know if 
