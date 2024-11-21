@@ -10,16 +10,16 @@
 
 const Screen = ({item}:any) =>{
     return(
-   <a href={item.link}> <video poster="" height={400} width={200} src={item.src} loop autoPlay muted  className="rounded-xl transition-transform ease-in-out hover:scale-110 cursor-pointer m-6" /> </a> 
+   <a href={item.link}> <video poster="" height={400} width={200} src={item.src} loop muted  className="rounded-xl transition-transform ease-in-out hover:scale-110 cursor-pointer m-6" /> </a> 
     )
 }
 
 function Components() {
   return (
-    <div className=" relative mt-16 justify-center items-center" id="components">
-    <div className="text-3xl sm:text-5xl font-bold text-center mb-4">Components</div>
+    <div className=" relative mt-32 justify-center items-center" id="components">
+    <div className="text-3xl sm:text-5xl font-bold text-center mb-8">Components</div>
 
-      <div className="grid sm:grid-cols-5 items-center mt-7 justify-center">
+      <div className="grid sm:grid-cols-5 items-center justify-center">
 
       {comps.map((item)=>
         <div>

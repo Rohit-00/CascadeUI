@@ -8,15 +8,12 @@ export default {
 
   theme: {
     extend: {
-      scrollbar: {
-        width: 'thin', // or any other value like 'thick'
-        track: {
-          background: 'gray-100', // or any other Tailwind color
-        },
-        thumb: {
-          background: 'gray-300', // or any other Tailwind color
-          border_radius: '6px', // for rounded corners
-        },
+      backgroundImage: {
+        'dots-light': 'radial-gradient(circle, rgba(0, 0, 0, 0.2) 1px, transparent 1px)',
+        'dots-dark': 'radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px)',
+      },
+      backgroundSize: {
+        'dots': '30px 30px', // Size of each dot
       },  
     },
   },

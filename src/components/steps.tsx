@@ -31,8 +31,8 @@ function MyComponent() {
       <section className="py-16 rounded-lg ">
         <div className="container">
           <h2 className="text-3xl sm:text-5xl font-bold text-center">Quick Start Guide</h2>
-          <div className="font-base mb-11 text-center mt-4">Easy to implement components</div>
-          <div className="max-w-3xl mx-auto">
+          <div className="font-base text-center mt-2 mb-8">Easy to implement components</div>
+          <div className="max-w-3xl mx-auto ">
             <div className="flex sm:justify-center">
               <button
                 className={`py-2 px-4 font-semibold ${activeTab === 'installation' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600'}`}
