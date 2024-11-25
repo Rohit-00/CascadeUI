@@ -1,9 +1,16 @@
 function Use() {
   return (
     <section className="sm:py-16 mt-16 hidden sm:block">
-    <div className="container mx-auto px-6 ">
-      <h2 className="text-3xl sm:text-5xl font-bold text-center">Two ways to install</h2>
-      <div className="font-base text-center mt-2 mb-8 text-blue-500">and both are easy peasy</div>
+ <div className="flex flex-col">
+        <div className="text-blue-500 text-xl font-bold text-center">
+          Pretty straight forward
+        </div>
+      <div className="sm:text-5xl text-3xl font-bold text-center">
+      Two ways to install
+      </div>
+      <div className="dark:text-gray-300 mt-2 sm:mt-5 text-center mb-3 sm:mb-9 sm:w-[40rem] self-center">
+      Cascade UI gives you two ways to install the components into your codebase either via npm package or simple copy paste for better control
+      </div>
       </div>
       <div className='flex flex-row justify-evenly items-center'>
       <div className="flex flex-col items-center">

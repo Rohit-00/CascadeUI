@@ -15,7 +15,7 @@ const InfiniteScrollCards = () => {
 
   return (
     <>
-    <div className="flex flex-col sm:mt-10 mt-[30rem]">
+    <div className="flex flex-col sm:mt-32 mt-[30rem]">
     <div className="text-blue-500 text-xl font-bold text-center">
       Increasing day by day
     </div>
@@ -23,8 +23,7 @@ const InfiniteScrollCards = () => {
   Components
   </div>
   <div className="dark:text-gray-300 mt-2 sm:mt-5 text-center sm:mb-9 sm:w-[40rem] self-center">
-  The library is expanding as I make new components every now and then
-  follow me on twitter to find out what component I'm working on
+  Clean and beautiful animated components that can make your app look and feel 10x better.
   </div>
   </div>
     <div className="relative w-full overflow-hidden py-3 sm:mt-0 ">
@@ -44,7 +43,7 @@ const InfiniteScrollCards = () => {
         {[...Array(10)].map((_, index) => (
           <div
             key={index}
-            className="h-48 w-72 flex-shrink-0 rounded-lg bg-gray-200 shadow-md"
+            className="h-96 w-56 flex-shrink-0 rounded-lg bg-gray-200 shadow-md"
           ></div>
         ))}
       </div>

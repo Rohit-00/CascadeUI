@@ -3,9 +3,28 @@ import { motion } from 'framer-motion';
 
 import svg from '../assets/cascadeUiIconblack.svg'
 import { Link, NavLink } from 'react-router-dom';
+import { FaGithub } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [stars, setStars] = useState<number>()
 
+  const fetchStars = async () => {
+    try{
+     await fetch('https://api.github.com/repos/Rohit-00/cascade')
+    .then(response => response.json())
+    .then(data=>{
+      setStars(data.stargazers_count)
+    })
+  }catch(error){
+    console.log(error)
+  }
+  console.log(stars)
+  }
+
+  fetchStars()
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -56,8 +75,8 @@ export default function Navbar() {
           <a href='https://github.com/Rohit-00/cascade' target='_blank'>
           <button className="p-[3px] relative">
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-          <div className="px-2 py-1 text-sm bg-white dark:bg-black rounded-[6px]  relative group transition duration-200 text-black dark:hover:text-black hover:text-white dark:text-white hover:bg-transparent">
-            Star on Github
+          <div className="px-4 py-[6px] text-sm bg-white dark:bg-black rounded-[6px]  relative group transition duration-200 text-black dark:hover:text-black hover:text-white dark:text-white hover:bg-transparent flex flex-row items-center justify-between gap-1">
+           <FaGithub size={18}/>  star on github <FaStar className='ml-2' size={18}/>{stars}
           </div>
         
           </button>

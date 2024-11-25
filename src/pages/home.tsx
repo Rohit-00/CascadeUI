@@ -13,7 +13,6 @@ const HomePage = () => {
     <Use/>
     <Code/>
     <InfiniteScrollCards/>
-
     </div>
     </>
   );
