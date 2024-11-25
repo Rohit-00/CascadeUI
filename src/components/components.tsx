@@ -10,16 +10,28 @@
 
 const Screen = ({item}:any) =>{
     return(
-   <a href={item.link}> <video poster="" height={400} width={200} src={item.src} loop muted  className="rounded-xl transition-transform ease-in-out hover:scale-110 cursor-pointer m-6" /> </a> 
+   <a href={item.link}> <video poster="" height={400} width={200} src={item.src} loop autoPlay muted  className="rounded-xl transition-transform ease-in-out hover:scale-110 cursor-pointer m-6" /> </a> 
     )
 }
 
+
 function Components() {
   return (
-    <div className=" relative mt-32 justify-center items-center" id="components">
-    <div className="text-3xl sm:text-5xl font-bold text-center mb-8">Components</div>
+    <div className=" mt-96 sm:mt-32 justify-center items-center">
+     <div className="flex flex-col">
+        <div className="text-blue-500 text-xl font-bold text-center">
+          Increasing day by day
+        </div>
+      <div className="sm:text-5xl text-3xl font-bold text-center">
+      Components
+      </div>
+      <div className="dark:text-gray-300 mt-2 sm:mt-5 text-center mb-3 sm:mb-9">
+      The library is expanding as I make new components every now and then<br/>
+      follow me on twitter to find out what component I'm working on
+      </div>
+      </div>
 
-      <div className="grid sm:grid-cols-5 items-center justify-center">
+      <div className="flex sm:flex-row mx-14">
 
       {comps.map((item)=>
         <div>

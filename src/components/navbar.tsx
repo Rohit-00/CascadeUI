@@ -11,8 +11,8 @@ export default function Navbar() {
   };
 
   return (
-    <div className='fixed top-0 backdrop-blur-sm bg-white/80 dark:bg-black/80 w-full z-50'>
-    <nav className=" mx-6 sm:mx-10">
+    <div className='fixed top-0 backdrop-blur-sm bg-white/5 dark:bg-black/5 w-full z-50 p-2'>
+    <nav className=" mx-3 sm:mx-10">
       <div className="w-full">
         <div className="relative flex items-center justify-between h-14">
           {/* Left side (Logo) */}
@@ -30,20 +30,20 @@ export default function Navbar() {
             <div className="flex  px-5">
               <NavLink
                 to="/"
-                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-400  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
+                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-100  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
                 Home
               </NavLink>
               <a
                 href="https://uidocs.pages.dev/components/animatedbutton/"
-                className="dark:text-gray-400  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"
+                className="dark:text-gray-100  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"
                 
               >
                 Components
               </a>
               <NavLink
                 to="/aboutus"
-                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-400  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
+                className=  {({isActive})=>isActive?"text-blue-500  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500":"dark:text-gray-100  hover:text-primary px-3 py-2 rounded-md text-m font-[400] hover:text-blue-500"}
               >
                 About Us
               </NavLink>

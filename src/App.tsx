@@ -37,7 +37,7 @@ const router = createBrowserRouter([
 const App = () => {
 useLenisScroll()
   return (
-    <div className='grid-background'>
+    <div>
     <RouterProvider router={router}/>
     </div>
   );

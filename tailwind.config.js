@@ -8,13 +8,15 @@ export default {
 
   theme: {
     extend: {
-      backgroundImage: {
-        'dots-light': 'radial-gradient(circle, rgba(0, 0, 0, 0.2) 1px, transparent 1px)',
-        'dots-dark': 'radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px)',
+      animation: {
+        scroll: 'scroll 40s linear infinite',
       },
-      backgroundSize: {
-        'dots': '30px 30px', // Size of each dot
-      },  
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
     },
   },
   variants: {

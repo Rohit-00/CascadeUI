@@ -3,7 +3,7 @@ function Use() {
     <section className="sm:py-16 mt-16 hidden sm:block">
     <div className="container mx-auto px-6 ">
       <h2 className="text-3xl sm:text-5xl font-bold text-center">Two ways to install</h2>
-      <div className="font-base text-center mt-2 mb-8">and both are easy peasy</div>
+      <div className="font-base text-center mt-2 mb-8 text-blue-500">and both are easy peasy</div>
       </div>
       <div className='flex flex-row justify-evenly items-center'>
       <div className="flex flex-col items-center">

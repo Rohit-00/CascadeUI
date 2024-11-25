@@ -2,10 +2,13 @@ import Phone from "./phones"
 
 const Hero = () => {
   return (
-    <div className="flex flex-col sm:flex-row mt-20 sm:mt-28 items-center justify-between">
+    <div className="">
+    <div className="flex flex-col sm:flex-row mt-20 sm:mt-28 items-center justify-between ">
+         
+    <div className=" absolute max-h-fit w-full bg-grid-dark bg-grid-size"></div>
       <div className="w-full"><div className=" sm:text-7xl text-3xl font-bold"><a>Beautiful Apps <br/> With Minimal Effort</a>
       </div>
-      <div className="dark:text-gray-400">
+      <div className="dark:text-gray-300">
         Collection of stunning animated components that are easy to integrate
       </div>
       <div className="flex flex-row  gap-4 items-center mt-6">
@@ -18,13 +21,16 @@ const Hero = () => {
       <div>
         Documentation
       </div>
-      </a> 
+      </a>     
       </div>
-      </div> 
+     </div> 
       <div className="w-full sm:mt-0 mt-10">
         <Phone/>
       </div>
+     
     </div>
+     
+     </div>
   )
 }
 

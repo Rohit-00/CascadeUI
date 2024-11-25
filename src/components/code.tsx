@@ -1,41 +1,24 @@
-import { Iphone15Pro } from "./iphone";
+import { Deck } from "./deck";
 
 function Code() {
   return (
-    <div className="mt-16 ">
-      <div className="sm:text-5xl font-bold text-3xl text-center mb-8">Reusable Components</div>
-      <div className=" flex sm:flex-row flex-col justify-evenly items-center gap-4 mx-5">
-      <div className="sm:h-[25rem] h-[19rem] w-[21.5rem] sm:w-[32rem] bg-slate-800 px-5 shadow-[0_0_40px_10px_rgb(89,129,195,0.6)] ">
-        <div className="flex flex-row gap-2 pt-4">
-            <div className="h-5 w-5 rounded-full bg-red-500"/>
-            <div className="h-5 w-5 rounded-full bg-yellow-500"/>
-            <div className="h-5 w-5 rounded-full bg-green-500"/>
+    <div className="mt-32 sm:mt-16 flex flex-col sm:flex-col   sm:items-center  sm:mx-20">
+      <div className="flex flex-col">
+        <div className="text-blue-500 text-xl font-bold text-center">
+          No tailwind
         </div>
-        <div>
-          <pre className="text-xs sm:text-base text-white  overflow-y-hidden mt-4">
-            <code className="">
-                {`import { StyleSheet, View } from 'react-native'\n`}
-                {`import React from 'react'\n`}
-                {`import {AnimatedTabs} from '@cascadeui/animated-tabs'\n\n`}
-              {`const App = () => {\n`}
-              {`  return (\n`}
-              {`    <View>\n`}
-              <span className="text-green-400">
-                {`      <TabBar  tabs={['Home', 'Profile', 'Settings']}\n`}
-              {`       contents={[<HomeContent />, 
-                  <ProfileContent />, 
-                  <SettingsContent />]} />\n`}
-              </span>
-              {`    </View>)};\n\n`}
-                {`export default App\n`}
-            </code>
-          </pre>
-        </div>
+      <div className="sm:text-5xl text-3xl font-bold text-center">
+      Reusable Component
       </div>
-      <Iphone15Pro className="size-[30rem] max-w-fit self-center" src="https://cloud.appwrite.io/v1/storage/buckets/670bf3d800356f2d1307/files/6729051300136c77b52c/view?project=66cc3f88001fcc4896d5&project=66cc3f88001fcc4896d5&mode=admin"/>
+      <div className="dark:text-gray-300 mt-2 sm:mt-5 text-center mb-3 sm:mb-9 sm:w-[40rem] ">
+      Every component is designed to be abstract and easy to implement
+      and can be modified according to your needs with props
       </div>
-      
-    </div>
+      </div>
+      <div className="mb-9 mt-9 sm:mb-0 sm:mt-0">
+        <Deck/>
+      </div>
+      </div>
   );
 }
 

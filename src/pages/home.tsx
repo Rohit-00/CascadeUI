@@ -1,9 +1,8 @@
 import '../index.css'
 import Hero from '../components/Hero';
-import Steps from '../components/steps';
 import Code from '../components/code';
-import Components from '../components/components';
 import Use from '../components/use';
+import InfiniteScrollCards from '../components/comps';
 
 
 const HomePage = () => {
@@ -12,9 +11,8 @@ const HomePage = () => {
    <div>
     <Hero/>
     <Use/>
-    <Steps/>
     <Code/>
-    <Components/>
+    <InfiniteScrollCards/>
 
     </div>
     </>
